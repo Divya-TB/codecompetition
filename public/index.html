@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to coding competition #2 by Divya, Norka B2</h1>
+    <form action="/email"method="post" class="forms">
+        <label for="email">Email : </label>
+     
+       <input type="email"name="mail" id="email" placeholder="Eg:addr@gmail.com">
+    
+       <input type="submit" value="send Email" onsubmit="val()" style="background-color: cornflowerblue;">
+ 
+        
+    </form>
+    <script>
+function val()
+{
+    var mail=document.getElementById('email').value;
+   
+        
+    if(mail.trim()==""){
+              alert("email field is mandatory");
+              mail.style.border="2px solid red";
+              return false;
+            }
+
+            
+              else{
+                  return true;
+              }
+     
+}
+forms.addEventListener('submit')
+    </script>
+</body>
+</html>
